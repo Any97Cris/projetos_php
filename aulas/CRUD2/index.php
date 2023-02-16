@@ -21,7 +21,7 @@ $contato = new Contato();
             <td><?php echo $l['email'] ?></td>
             <td>
                 <a href="editar.php?id=<?php echo $l['id']?>">[ Editar ]</a>
-                <a href="deletar.php?id=<?php echo $l['id'] ?>">[ Deletar ]</a>
+                <a href="deletar.php?id=<?php echo $l['id'] ?>" onclick="return confirm('Deseja realmente excluir?')">[ Deletar ]</a>
             </td>
         </tr>
     <?php } ?>
